@@ -45,7 +45,6 @@ def train(dataloader, val_dataloader, model, loss_fn, optimizer, epochn, device,
     num_pixels = 0
     dice_score = 0
     
-    size_v = len(dataloader.dataset)
     model.eval()
 
     with torch.no_grad():
