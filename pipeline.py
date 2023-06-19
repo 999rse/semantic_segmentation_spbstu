@@ -37,7 +37,7 @@ print(f'Loss function: {loss_fn}, optimizer: {optimizer}')
 # Traning zone
 print('Traning start')
 epochs = 1
-for indep in range(epochs):
+for indep in tqdm(range(epochs)):
     train(train_dataloader, val_dataloader, model_unet, loss_fn, optimizer, epochs, device)
 print("Training done!")
 
